@@ -14,7 +14,7 @@ export class GOAL2Component implements OnInit {
   new Goal2(5, 'Solve math homework', 'Damn Math', new Date(2018, 2, 14) ),
   new Goal2(6, 'Plot my world domination plan', 'Cause I am an evil overlord', new Date(2018, 3, 14)),
  ];
- deleteGoal(isComplete, index) {
+ deleteGoal2(isComplete, index) {
   if (isComplete) {
       const toDelete = confirm(`Are you sure you want to delete ${this.goal2[index].name}`);
 
@@ -23,7 +23,7 @@ export class GOAL2Component implements OnInit {
    }
 }
 }
-addNewGoal(goal) {
+addNewGoal2(goal) {
 const goalLength = this.goal2.length;
 goal.id = goalLength + 1;
 goal.completeDate = new Date(goal.completeDate);
